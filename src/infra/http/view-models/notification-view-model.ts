@@ -1,4 +1,4 @@
-import { Notification } from '@app/entities/notifification';
+import { Notification } from '@application/entities/notifification';
 
 export class NotificationViewModel {
   static toHTPP(notification: Notification) {
@@ -7,6 +7,8 @@ export class NotificationViewModel {
       content: notification.content.value,
       category: notification.category,
       recipientId: notification.recipientId,
+      readAt: notification.readAt,
+      canceledAt: notification.canceledAt,
     };
   }
 }

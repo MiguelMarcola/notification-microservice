@@ -1,5 +1,5 @@
-import { Content } from '@app/entities/notification/content';
-import { Notification, NotificationProps } from '@app/entities/notifification';
+import { Content } from '@application/entities/notification/content';
+import { Notification, NotificationProps } from '@application/entities/notifification';
 
 type Override = Partial<NotificationProps>;
 
